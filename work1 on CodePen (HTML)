@@ -1,0 +1,5 @@
+<body>
+  <h1>WHAT'S YOUR AGE?</h1>
+  <p>Calculator</p>
+  <input type="date">
+</body>
