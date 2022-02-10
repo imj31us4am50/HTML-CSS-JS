@@ -1,9 +1,0 @@
-<body>
-  <h1>WHAT'S YOUR AGE?</h1>
-  <p class="nun">Calculator</p>
-  <input type="date" id="input-el">
-  <button id="btn-el">Find out!</button>
-  <!--  <span>You are<p id="p-el"></p> years old.<span>  -->
-	<br>
-	<div id="div-el"></div>
-</body>
