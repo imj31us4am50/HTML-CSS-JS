@@ -16,5 +16,7 @@ button.addEventListener("click", function(){
 	console.log(yourAge);
 	if (yourAge > 0)
 	theReveal.innerHTML =  `<p>You are ${yourAge} years old. Or about to be...`;
+	else if (yourAge == 0)
+	theReveal.innerHTML =  `<p>Welcome to the world!</p>`
 	else theReveal.innerHTML =  `<p>You don't exist.</p>`;
 })
