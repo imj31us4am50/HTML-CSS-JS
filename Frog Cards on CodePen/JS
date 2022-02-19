@@ -1,4 +1,3 @@
-const pEl = document.getElementById("showup");
 const leftBtn = document.getElementById("left-btn");
 const rightBtn = document.getElementById("right-btn");
 const cardDivEl = document.querySelector("#card1");
