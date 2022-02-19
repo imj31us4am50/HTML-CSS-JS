@@ -1,0 +1,14 @@
+<body>
+  <h1>Frogs For Fun</h1>
+  <div class="container">
+  <button id="left-btn"><</button>
+    <div id="card1">
+      <div class="card-container">
+      <img src="https://imj31us4am50.github.io/imgs/redeyedfrog.jpg">
+      <p>A frog?!</p>
+      </div>
+      <p class="description">"Their neon-green bodies may play a similar role in thwarting predators. Many of the animals that eat red-eyed tree frogs are nocturnal hunters that use keen eyesight to find prey."</p>
+    </div>
+    <button id="right-btn">></button>
+    </div>
+</body>
