@@ -1,0 +1,56 @@
+const pEl = document.getElementById("showup");
+const leftBtn = document.getElementById("left-btn");
+const rightBtn = document.getElementById("right-btn");
+const cardDivEl = document.querySelector("#card1");
+
+const theElements = [
+  // E L E M E N T   0
+  `<div class="card-container">
+      <img src="https://imj31us4am50.github.io/imgs/redeyedfrog.jpg">
+      <p>A frog?!</p>
+  </div>
+      <p class="description">"Their neon-green bodies may play a similar role in thwarting predators. Many of the animals that eat red-eyed tree frogs are nocturnal hunters that use keen eyesight to find prey."           </p>`,
+// E L E M E N T   1
+ `<div class="card-container">
+      <img src="https://imj31us4am50.github.io/imgs/curiousfrog.jpg">
+      <p><3</p>
+  </div>
+      <p class="description">"They can range in color from bright green to a light minty blue. The color varies from individual to individual.At night all individuals will change their color from a green to a gray."           
+      </p>`,
+// E L E M E N T 2
+`<div class="card-container">
+      <img src="https://imj31us4am50.github.io/imgs/smolphrog.jpg">
+      <p>Kyoot!</p>
+  </div>
+      <p class="description">"These iconic rain-forest amphibians sleep by day stuck to leaf-bottoms with their eyes closed and body markings covered. When disturbed, they flash their bulging red eyes and reveal their huge, webbed orange feet and bright blue-and-yellow flanks."           
+      </p>`,
+// E L E M E N T   3
+`<div class="card-container">
+      <img src="https://imj31us4am50.github.io/imgs/twocutefrogs.jpg">
+      <p>Best Buddies</p>
+  </div>
+      <p class="description">"Their skin has a waxy coating, allowing them to tolerate more arid conditions. This means that they don’t require quite as much moisture in the air as other tree frogs, which is easier to achieve in home environments."           
+      </p>`];
+
+let i = 0;
+
+leftBtn.addEventListener("click", function(){
+  // --;
+  if (i > 0 && i <= theElements.length)
+    i--;
+  cardDivEl.innerHTML = theElements[i];
+})
+
+rightBtn.addEventListener("click", function(){
+  // ++;
+  if (i == theElements.length - 1)
+   {
+    i = 0;
+    cardDivEl.innerHTML = theElements[i];
+   }
+  else if (i >= 0 && i < theElements.length - 1)
+   {
+    i++;  
+  cardDivEl.innerHTML = theElements[i];
+   }
+})
