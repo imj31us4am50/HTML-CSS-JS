@@ -1,0 +1,29 @@
+// javascript 
+const messageEl = document.getElementById("message-el");
+const generateBtn = document.getElementById("generate");
+const arrayOfMessages = [
+    "You look great today", 
+    "Nothing can stop you", 
+    "The stars must be jealous because you shine way better than them", 
+    "There are 21 letters in the alphabet. Oops, I forgot U, R, A, Q, T!",
+    "There's no need for cute messages when you're the cute one here.",
+    "I wish to have a beautiful day just like you",
+    "This postman frog wishes you have a nice day.",
+    'You put the "hot" in hotspot.',
+    "Hippity Hoppity, You are now my property.",
+    "Kyoot!",
+    "You take my breath away.",
+    "Remember the good times",
+    "Stay positive",
+    "You're like a ray of sunshine",
+    "No one else compares to you",
+    "You are special!"
+    ]
+generateBtn.addEventListener("click", function(){
+    render();
+})
+
+function render(){
+    let i = Math.floor(Math.random() * 16);
+    messageEl.textContent = arrayOfMessages[i];
+}
